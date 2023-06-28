@@ -1,11 +1,12 @@
 <h1>Pages#index</h1>
 
 <h3>Personajes de harry Poter</h3>
+<br>
 
 
 
-<table class="table container table-striped">
-  <thead>
+<table class="table table-striped table-bordered table-hover">
+  <thead class="table-dark">
     <tr>
       <th scope="col">#</th>
       <th scope="col">Names</th>
@@ -15,7 +16,6 @@
   </thead>
   <tbody>
   <% @Characters.each do |i| %>
-  
     <tr>
       <th scope="row"><%= i.id %></th>
       <td><%= i.name %></td>
@@ -25,3 +25,8 @@
   <% end%>
   </tbody>
 </table>
+
+<!--
+railway
+bundle exec rails assets:precompile db:create db:migrate db:seed
+-->
