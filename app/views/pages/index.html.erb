@@ -1,0 +1,27 @@
+<h1>Pages#index</h1>
+
+<h3>Personajes de harry Poter</h3>
+
+
+
+<table class="table container table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Names</th>
+      <th scope="col">Locations</th>
+      <th scope="col">Houses</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @Characters.each do |i| %>
+  
+    <tr>
+      <th scope="row"><%= i.id %></th>
+      <td><%= i.name %></td>
+      <td><%= i.location %></td>
+      <td><%= i.house %></td>
+    </tr>
+  <% end%>
+  </tbody>
+</table>
